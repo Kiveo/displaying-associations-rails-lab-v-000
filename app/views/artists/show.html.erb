@@ -2,3 +2,5 @@
 
 <h1>Name: <%= @artist.name %></h1>
 <h1>Number of Songs: <%= @artist.song_count %></h1>
+
+<h1>Artist Song: <%= link_to @artist.song.name, song_path(@artist.song) %></h1>
