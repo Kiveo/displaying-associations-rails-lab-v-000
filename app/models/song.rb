@@ -5,4 +5,8 @@ class Song < ActiveRecord::Base
     self.artist.name
   end
 
+  def link_name
+    "#{self.artist_name} - #{self.title} %>"
+  end
+
 end
